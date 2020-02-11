@@ -1,5 +1,7 @@
 package com.LickingHeights;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -28,7 +30,22 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     double f_c;
     int L;
 
-    N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L;
+    Scanner keyboard;
+
+        keyboard = new Scanner (System.in);
+
+
+
+
+
+
+    //todo initialize the Scanner to take input and commit
+        //Ask for rStar number store in the rStar variable and commit
+        //Ask for f_p fraction store in the f_p variable and commit
+        //todo complete each one of the variables and store correctly commit each time
+
+
+    N = (int)(rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L);
 
     System.out.println("The number of intelligent species that are out there\n" +
             " that can communicate with us is: " + N);
