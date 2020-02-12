@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+ drakeEquation();
 
     }
 
@@ -34,12 +34,27 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
 
         keyboard = new Scanner (System.in);
 
+        System.out.println("Rate of star formed per year.");
+        rStar=keyboard.nextInt();
 
+        System.out.println("Fraction of stars that will have planets.");
+        f_p=keyboard.nextInt();
 
+        System.out.println("Stars that have planets, 1 to 5 planets that will develop life.");
+        numberOfExoplanets=keyboard.nextInt();
 
+        System.out.println("Chance of these planets developing life.");
+        f_l=keyboard.nextInt();
 
+        System.out.println("Chance of these planets having intelligent life.");
+        f_i=keyboard.nextInt();
 
-    //todo initialize the Scanner to take input and commit
+        System.out.println("Number of planets that can communicate with us.");
+        f_c=keyboard.nextInt();
+
+        System.out.println("How long will these last, 1000 to 100,000 years");
+        L=keyboard.nextInt();
+
         //Ask for rStar number store in the rStar variable and commit
         //Ask for f_p fraction store in the f_p variable and commit
         //todo complete each one of the variables and store correctly commit each time
@@ -47,8 +62,9 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
 
     N = (int)(rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L);
 
+
     System.out.println("The number of intelligent species that are out there\n" +
-            " that can communicate with us is: " + N);
+            " " + N );
 
 
 
