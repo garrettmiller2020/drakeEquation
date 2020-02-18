@@ -55,13 +55,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
         System.out.println("The length of time for which such civilizations release detectable signals into space.");
         L=keyboard.nextInt();
 
-        //Ask for rStar number store in the rStar variable and commit
-        //Ask for f_p fraction store in the f_p variable and commit
-        //todo complete each one of the variables and store correctly commit each time
-
-
     N = (int)(rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L);
-
 
     System.out.println("The number of intelligent species that are out there "+ N );
 
