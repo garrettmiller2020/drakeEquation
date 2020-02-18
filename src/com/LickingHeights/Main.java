@@ -22,9 +22,9 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
  */
 
     int N;
-    int rStar;
+    double rStar;
     double f_p;
-    int numberOfExoplanets;
+    double numberOfExoplanets;
     double f_l;
     double f_i;
     double f_c;
@@ -34,25 +34,25 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
 
         keyboard = new Scanner (System.in);
 
-        System.out.println("Rate of star formed per year.");
-        rStar=keyboard.nextInt();
+        System.out.println("Rate of star formation in our galaxy.");
+        rStar=keyboard.nextDouble();
 
-        System.out.println("Fraction of stars that will have planets.");
-        f_p=keyboard.nextInt();
+        System.out.println("The fraction of those stars that have planets.");
+        f_p=keyboard.nextDouble();
 
-        System.out.println("Stars that have planets, 1 to 5 planets that will develop life.");
-        numberOfExoplanets=keyboard.nextInt();
+        System.out.println("The number of those planets that can potentially support life.");
+        numberOfExoplanets=keyboard.nextDouble();
 
-        System.out.println("Chance of these planets developing life.");
-        f_l=keyboard.nextInt();
+        System.out.println("The fraction of planets that could support life that actually develop life at some point.");
+        f_l=keyboard.nextDouble();
 
-        System.out.println("Chance of these planets having intelligent life.");
-        f_i=keyboard.nextInt();
+        System.out.println("The fraction of planets with life that actually go on to develop intelligent life ");
+        f_i=keyboard.nextDouble();
 
-        System.out.println("Number of planets that can communicate with us.");
-        f_c=keyboard.nextInt();
+        System.out.println("The fraction of civilizations that develop a technology.");
+        f_c=keyboard.nextDouble();
 
-        System.out.println("How long will these last, 1000 to 100,000 years");
+        System.out.println("The length of time for which such civilizations release detectable signals into space.");
         L=keyboard.nextInt();
 
         //Ask for rStar number store in the rStar variable and commit
@@ -63,8 +63,7 @@ L = 1000 to 100,000,000 years (which will last somewhere between 1000 and 100,00
     N = (int)(rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L);
 
 
-    System.out.println("The number of intelligent species that are out there\n" +
-            " " + N );
+    System.out.println("The number of intelligent species that are out there "+ N );
 
 
 
